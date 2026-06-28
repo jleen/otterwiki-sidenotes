@@ -10,15 +10,8 @@ class SideNotes:
     @hookimpl
     def static_css(self) -> str:
         return '''
-@import url('https://fonts.googleapis.com/css2?family=Baskervville');
-
 body {
     counter-reset: sidenote-counter;
-}
-
-.content > .page {
-    font-family: 'Baskervville', serif;
-    font-weight: 400;
 }
 
 .alert-sidenote:before {
